@@ -1,0 +1,21 @@
+apiversion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-index-deployment
+spec:
+  selector:
+    matchLabels:
+      app: stock-index
+  replicas: 2
+  template:
+    metadata: 
+      labels:
+        app: stock-index
+    spec:
+      containers:
+      - name: stock-index
+        image: aaakangire/stock-index:1.0
+        ports:
+        - containerPort: 8000
+
+---
