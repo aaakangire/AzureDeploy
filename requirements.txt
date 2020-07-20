@@ -1,0 +1,14 @@
+Flask==1.1.1
+Werkzeug==1.0.0
+contractions==0.0.25
+itsdangerous==1.1.0
+Jinja2==2.11.1
+numpy>=1.18.1
+nltk==3.4.5
+pandas>=1.0.1
+pickleshare==0.7.5
+scikit-learn>=0.22.1
+beautifulsoup4==4.8.2
+lxml==4.5.0
+urllib3==1.25.8
+xmltodict==0.12.0
