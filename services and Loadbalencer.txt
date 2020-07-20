@@ -1,4 +1,4 @@
-Loadbalancer: http://a4e6b6ca7b7934a908c773ce1aadc3fe-1417744358.us-east-2.elb.amazonaws.com
+Loadbalancer: http://a77d18456ba7f421289d5c0c1b550010-909749958.us-east-2.elb.amazonaws.com
 service for deployment command:
  kubectl expose deployment stock-index-deployment --type=LoadBalancer --port 8000 --target-port 8000
  
