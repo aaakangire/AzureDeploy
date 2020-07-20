@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: stock-index
-        image: aaakangire/stock-index:1.0
+        image: aaakangire/stock-index:3.0
         ports:
         - containerPort: 8000
 
