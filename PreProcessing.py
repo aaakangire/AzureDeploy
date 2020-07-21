@@ -28,7 +28,7 @@ for row in range(0,len(df.index)):
 ## Adding new column to the dataset
 df['headlines'] = headlines
 
-## Cleaning of the data and append to stemmed corpus
+## Cleaning of the data and append to corpus
 corpus_stem = []
 corpus_lamma = []
 sm = PorterStemmer()
@@ -50,11 +50,14 @@ for i in range(0, len(df.index)):
         corpus_lamma.append(review_lamma)
 
 ## Pickling of cleaned corpus for further use
+## Lamatized corpus
 with open('lamma_corpus.pkl', 'wb') as f:
     pickle.dump(corpus_lamma, f)
 
+## Stemmed corpus
 with open('stem_corpus.pkl', 'wb') as f2:
     pickle.dump(corpus_stem, f2)
     
+## Stopwords
 with open('stopwords.pkl', 'wb') as f2:
     pickle.dump(all_stopwords, f2)
